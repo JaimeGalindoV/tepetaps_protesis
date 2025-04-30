@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Dog, Heart, Instagram, Facebook, Twitter } from 'lucide-react';
@@ -11,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Dog className="h-8 w-8" />
-              <span className="text-2xl font-bold">Pawsitive Prosthetics</span>
+              <span className="text-2xl font-bold">Tepetaps</span>
             </div>
             <p className="text-petPurple-100 mb-6">
               Ayudamos a nuestros amigos de cuatro patas a recuperar su movilidad y calidad de vida.
@@ -75,7 +74,7 @@ const Footer = () => {
         
         <div className="border-t border-petPurple-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-petPurple-200 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Pawsitive Prosthetics. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} Tepetaps. Todos los derechos reservados.
           </p>
           <div className="flex gap-4">
             <Link to="/privacy" className="text-petPurple-200 text-sm hover:text-white transition-colors">

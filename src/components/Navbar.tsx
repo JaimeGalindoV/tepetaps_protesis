@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
             <Dog className="h-8 w-8 text-petPurple-600" />
-            <span className="text-2xl font-bold text-petPurple-600">Pawsitive Prosthetics</span>
+            <span className="text-2xl font-bold text-petPurple-600">Tepetaps</span>
           </Link>
 
           {/* Desktop Navigation */}
