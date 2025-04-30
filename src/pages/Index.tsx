@@ -43,7 +43,7 @@ const Index = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">¿Por qué Elegirnos?</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Nos dedicamos a mejorar la vida de las mascotas con necesidades especiales a través de soluciones innovadoras y compasivas.
+                En Tepetaps nos dedicamos a mejorar la vida de las mascotas con necesidades especiales a través de soluciones innovadoras y compasivas.
               </p>
             </div>
             

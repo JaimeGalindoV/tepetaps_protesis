@@ -21,6 +21,11 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  // Función para formatear precios en español
+  const formatPrice = (price: number): string => {
+    return price.toFixed(2).replace('.', ',') + ' €';
+  };
+
   return (
     <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg h-full flex flex-col">
       <div className="relative">
@@ -57,11 +62,11 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <div className="flex flex-col">
           {product.isOnSale ? (
             <>
-              <span className="text-gray-500 line-through text-sm">${product.price.toFixed(2)}</span>
-              <span className="font-bold text-lg text-petPurple-600">${product.salePrice?.toFixed(2)}</span>
+              <span className="text-gray-500 line-through text-sm">{formatPrice(product.price)}</span>
+              <span className="font-bold text-lg text-petPurple-600">{formatPrice(product.salePrice || 0)}</span>
             </>
           ) : (
-            <span className="font-bold text-lg text-petPurple-600">${product.price.toFixed(2)}</span>
+            <span className="font-bold text-lg text-petPurple-600">{formatPrice(product.price)}</span>
           )}
         </div>
         <Button size="sm" className="bg-petBlue-500 hover:bg-petBlue-600">

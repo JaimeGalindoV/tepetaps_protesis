@@ -13,7 +13,7 @@ const HeroSection = () => {
               Devolviendo Movilidad y Alegría a Nuestras Mascotas
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              En Pawsitive Prosthetics creamos prótesis personalizadas para perros y gatos, 
+              En Tepetaps creamos prótesis personalizadas para perros y gatos, 
               ayudándolos a recuperar su calidad de vida. Nuestros productos son diseñados con amor y tecnología avanzada.
             </p>
             <div className="flex flex-wrap gap-4">

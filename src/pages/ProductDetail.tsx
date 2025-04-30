@@ -35,6 +35,11 @@ const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [quantity, setQuantity] = useState(1);
   
+  // Función para formatear precios en español
+  const formatPrice = (price: number): string => {
+    return price.toFixed(2).replace('.', ',') + ' €';
+  };
+  
   // Find the product based on the id
   const product = productsData.find(p => p.id === id);
   
@@ -133,14 +138,14 @@ const ProductDetail = () => {
                 <div className="mb-6">
                   {product.isOnSale ? (
                     <div className="flex items-center gap-3">
-                      <span className="text-3xl font-bold text-petPurple-600">${product.salePrice?.toFixed(2)}</span>
-                      <span className="line-through text-gray-500">${product.price.toFixed(2)}</span>
+                      <span className="text-3xl font-bold text-petPurple-600">{formatPrice(product.salePrice || 0)}</span>
+                      <span className="line-through text-gray-500">{formatPrice(product.price)}</span>
                       <span className="bg-red-100 text-red-700 px-2 py-0.5 rounded text-sm font-medium">
                         {Math.round(((product.price - (product.salePrice || 0)) / product.price) * 100)}% OFF
                       </span>
                     </div>
                   ) : (
-                    <span className="text-3xl font-bold text-petPurple-600">${product.price.toFixed(2)}</span>
+                    <span className="text-3xl font-bold text-petPurple-600">{formatPrice(product.price)}</span>
                   )}
                 </div>
                 
@@ -176,7 +181,7 @@ const ProductDetail = () => {
                   <Truck className="h-5 w-5 text-petBlue-600 mt-0.5" />
                   <div>
                     <h4 className="font-medium mb-1">Envío gratis</h4>
-                    <p className="text-sm text-gray-600">En pedidos superiores a $100. Entrega estimada: 3-5 días hábiles.</p>
+                    <p className="text-sm text-gray-600">En pedidos superiores a 100,00 €. Entrega estimada: 3-5 días hábiles.</p>
                   </div>
                 </div>
                 
@@ -317,7 +322,7 @@ const ProductDetail = () => {
                   </div>
                   <h3 className="font-medium group-hover:text-petPurple-600 transition-colors">{product.name}</h3>
                   <p className="text-petPurple-600 font-semibold mt-1">
-                    ${(product.isOnSale ? product.salePrice : product.price)?.toFixed(2)}
+                    {formatPrice(product.isOnSale ? (product.salePrice || 0) : product.price)}
                   </p>
                 </Link>
               ))}

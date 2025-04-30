@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -97,6 +96,11 @@ const Products = () => {
   );
   const [showSaleOnly, setShowSaleOnly] = useState(false);
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  
+  // Función para formatear precios en español
+  const formatPrice = (price: number): string => {
+    return price.toFixed(2).replace('.', ',') + ' €';
+  };
   
   // Apply filters
   useEffect(() => {
