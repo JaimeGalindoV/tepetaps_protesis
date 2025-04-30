@@ -32,7 +32,7 @@ const HeroSection = () => {
           <div className="md:w-1/2 relative">
             <div className="rounded-full bg-petBlue-300/20 h-[500px] w-[500px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
             <img 
-              src="/placeholder.svg" 
+              src="https://i.pinimg.com/736x/4d/4b/d0/4d4bd081125d87f88838c5a9af0788c3.jpg" 
               alt="Perro con prótesis" 
               className="relative z-10 w-full h-auto max-w-md mx-auto rounded-xl shadow-lg animate-float"
             />
