@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import DonationCard, { Donation } from '@/components/DonationCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Heart, Paw, Truck } from 'lucide-react';
+import { Heart, Dog, Truck } from 'lucide-react';
 
 const featuredDonations: Donation[] = [
   {
@@ -50,7 +50,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-sm text-center">
                 <div className="mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-petBlue-100 mb-4">
-                  <Paw className="h-8 w-8 text-petBlue-600" />
+                  <Dog className="h-8 w-8 text-petBlue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Diseño Personalizado</h3>
                 <p className="text-gray-600">
