@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,43 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        petBlue: {
+          50: '#EBF5FF',
+          100: '#E1EFFE',
+          200: '#C3DDFD',
+          300: '#A4CAFE',
+          400: '#76A9FA',
+          500: '#4F8EF7',
+          600: '#3168E0',
+          700: '#2451B7',
+          800: '#1E429F',
+          900: '#1A365D',
+        },
+        petPurple: {
+          50: '#F5F3FF',
+          100: '#EDE9FE',
+          200: '#DDD6FE',
+          300: '#C4B5FD',
+          400: '#A78BFA',
+          500: '#8B5CF6',
+          600: '#7C3AED',
+          700: '#6D28D9',
+          800: '#5B21B6',
+          900: '#4C1D95',
+        },
+        petBeige: {
+          50: '#FDFAF5',
+          100: '#FAF5EB',
+          200: '#F5E9D7',
+          300: '#EBDBC0',
+          400: '#DBCA9F',
+          500: '#C8B77E',
+          600: '#B0A06A',
+          700: '#938254',
+          800: '#766741',
+          900: '#5D4F32',
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +121,16 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'float': 'float 3s ease-in-out infinite',
 			}
 		}
 	},
