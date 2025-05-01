@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Heart, ShoppingCart } from 'lucide-react';
+import { Heart, MessagesSquare } from 'lucide-react';
 
 export interface Product {
   id: string;
@@ -70,7 +70,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           )}
         </div>
         <Button size="sm" className="bg-petBlue-500 hover:bg-petBlue-600">
-          <ShoppingCart className="h-4 w-4 mr-1" /> Añadir
+          <MessagesSquare  className="h-4 w-4 mr-1" /> Contactar
         </Button>
       </CardFooter>
     </Card>

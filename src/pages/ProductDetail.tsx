@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Heart, ShoppingCart, Minus, Plus, Check, Info, Truck } from 'lucide-react';
+import { Heart, MessagesSquare, Minus, Plus, Check, Info, Truck } from 'lucide-react';
 import { Product } from '@/components/ProductCard';
 
 // Sample products data
@@ -176,42 +176,10 @@ const ProductDetail = () => {
                   </ul>
                 </div>
                 
-                {/* Shipping */}
-                <div className="bg-petBlue-50 rounded-lg p-4 mb-8 flex items-start gap-3">
-                  <Truck className="h-5 w-5 text-petBlue-600 mt-0.5" />
-                  <div>
-                    <h4 className="font-medium mb-1">Envío gratis</h4>
-                    <p className="text-sm text-gray-600">En pedidos superiores a 100,00 €. Entrega estimada: 3-5 días hábiles.</p>
-                  </div>
-                </div>
-                
-                {/* Quantity Selector */}
-                <div className="mb-8">
-                  <h3 className="text-sm font-medium mb-3">Cantidad:</h3>
-                  <div className="inline-flex items-center border border-gray-300 rounded-md">
-                    <Button 
-                      variant="ghost" 
-                      size="icon"
-                      onClick={() => handleQuantityChange(-1)}
-                      disabled={quantity <= 1}
-                    >
-                      <Minus className="h-4 w-4" />
-                    </Button>
-                    <span className="w-12 text-center">{quantity}</span>
-                    <Button 
-                      variant="ghost" 
-                      size="icon"
-                      onClick={() => handleQuantityChange(1)}
-                    >
-                      <Plus className="h-4 w-4" />
-                    </Button>
-                  </div>
-                </div>
-                
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 mb-8">
                   <Button className="flex-1 bg-petPurple-600 hover:bg-petPurple-700">
-                    <ShoppingCart className="h-5 w-5 mr-2" /> Añadir al Carrito
+                    <MessagesSquare className="h-5 w-5 mr-2" /> Contactar al Vendedor
                   </Button>
                   <Button variant="outline" className="border-petPurple-200 text-petPurple-600 hover:bg-petPurple-50">
                     <Heart className="h-5 w-5 mr-2" /> Añadir a Favoritos

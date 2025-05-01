@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Heart, Menu, X, ShoppingCart} from 'lucide-react';
+import { Heart, Menu, X, MessagesSquare} from 'lucide-react';
 import { Logo } from './ui/logo';
 
 const Navbar = () => {
@@ -43,7 +43,7 @@ const Navbar = () => {
               <Heart className="h-5 w-5" />
             </Button>
             <Button variant="outline" size="icon" className="text-petPurple-600 border-petPurple-200 hover:bg-petPurple-50">
-              <ShoppingCart className="h-5 w-5" />
+              <MessagesSquare className="h-5 w-5" />
             </Button>
             <Link to="/donations">
               <Button className="bg-petPurple-600 hover:bg-petPurple-700">Donar</Button>
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <Heart className="h-5 w-5" />
               </Button>
               <Button variant="outline" size="icon" className="text-petPurple-600 border-petPurple-200">
-                <ShoppingCart className="h-5 w-5" />
+                <MessagesSquare className="h-5 w-5" />
               </Button>
               <Link to="/donations" className="w-full">
                 <Button className="bg-petPurple-600 hover:bg-petPurple-700 w-full">Donar</Button>
