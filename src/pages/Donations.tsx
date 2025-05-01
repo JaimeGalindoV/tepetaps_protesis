@@ -266,7 +266,7 @@ const Donations = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <div className="mb-6">
-                <img src="/placeholder.svg" alt="Donante" className="w-20 h-20 rounded-full mx-auto" />
+                <img src="https://randomuser.me/api/portraits/women/0.jpg" alt="Donante" className="w-20 h-20 rounded-full mx-auto" />
               </div>
               <blockquote className="text-xl italic mb-6">
                 "Donar para ayudar a crear una prótesis para Milo ha sido una de las experiencias más gratificantes. Ver cómo ha recuperado su alegría y movilidad no tiene precio. Gracias por permitirme ser parte de esta historia."

@@ -206,7 +206,7 @@ const About = () => {
                 </p>
                 <div className="flex items-center gap-4">
                   <img 
-                    src="/placeholder.svg" 
+                    src="https://randomuser.me/api/portraits/men/0.jpg" 
                     alt="Cliente" 
                     className="w-12 h-12 rounded-full object-cover"
                   />
@@ -222,7 +222,7 @@ const About = () => {
                 </p>
                 <div className="flex items-center gap-4">
                   <img 
-                    src="/placeholder.svg" 
+                    src="https://randomuser.me/api/portraits/women/8.jpg" 
                     alt="Cliente" 
                     className="w-12 h-12 rounded-full object-cover"
                   />
@@ -238,7 +238,7 @@ const About = () => {
                 </p>
                 <div className="flex items-center gap-4">
                   <img 
-                    src="/placeholder.svg" 
+                    src="https://randomuser.me/api/portraits/men/1.jpg" 
                     alt="Cliente" 
                     className="w-12 h-12 rounded-full object-cover"
                   />
