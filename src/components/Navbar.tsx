@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
             {/* <Dog className="h-8 w-8 text-petPurple-600" /> */}
-            <img src="/public/Logo.png" alt="Logo" className="h-8 w-8" />
+            <img src="..\..\public\Logo.png" alt="Logo" className="h-8 w-8" />
             <span className="text-2xl font-bold text-petPurple-600">Tepetaps</span>
           </Link>
 
