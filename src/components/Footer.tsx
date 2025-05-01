@@ -66,8 +66,8 @@ const Footer = () => {
             <address className="not-italic text-petPurple-100">
               <p>Avenida Mascota Feliz 123</p>
               <p>Ciudad Animalitos, CP 12345</p>
-              <p className="mt-2">Email: info@pawsitiveprosthetics.com</p>
-              <p>Teléfono: (123) 456-7890</p>
+              <p className="mt-2">Email: tepetaps.pet@gmail.com</p>
+              <p>Teléfono: (33) 2157-7429</p>
             </address>
           </div>
         </div>
