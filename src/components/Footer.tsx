@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Dog, Heart, Instagram, Facebook, Twitter } from 'lucide-react';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
-
+import { Logo } from './ui/logo';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Dog className="h-8 w-8" />
+              <Logo className="h-8 w-8"/>
               <span className="text-2xl font-bold">Tepetaps</span>
             </div>
             <p className="text-petPurple-100 mb-6">
