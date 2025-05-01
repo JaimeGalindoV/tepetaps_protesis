@@ -8,25 +8,9 @@ import DonationCard, { Donation } from '@/components/DonationCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Heart, Dog, Truck } from 'lucide-react';
+import { donationCampaigns } from '@/pages/Donations';
 
-const featuredDonations: Donation[] = [
-  {
-    id: '1',
-    title: 'Prótesis para Max',
-    description: 'Ayuda a Max, un labrador de 5 años, a conseguir una prótesis para su pata trasera.',
-    targetAmount: 3000,
-    currentAmount: 1800,
-    image: '/placeholder.svg'
-  },
-  {
-    id: '2',
-    title: 'Rehabilitación para Luna',
-    description: 'Luna necesita terapia de rehabilitación después de recibir su nueva prótesis.',
-    targetAmount: 1500,
-    currentAmount: 750,
-    image: '/placeholder.svg'
-  }
-];
+const featuredDonations: Donation[] = donationCampaigns.slice(0, 2);
 
 const Index = () => {
   return (
@@ -120,7 +104,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-sm">
                 <div className="flex items-start gap-4">
-                  <img src="/placeholder.svg" alt="Perro con prótesis" className="w-20 h-20 rounded-full object-cover" />
+                  <img src="/Rocky & María.jpg" alt="Perro con prótesis" className="w-20 h-20 rounded-full object-cover" />
                   <div>
                     <h4 className="font-semibold text-lg">Rocky & María</h4>
                     <p className="text-gray-500 mb-4">Ciudad de México</p>
@@ -133,7 +117,7 @@ const Index = () => {
               
               <div className="bg-white p-6 rounded-xl shadow-sm">
                 <div className="flex items-start gap-4">
-                  <img src="/placeholder.svg" alt="Gato con prótesis" className="w-20 h-20 rounded-full object-cover" />
+                  <img src="/Mimi & Carlos.jpg" alt="Gato con prótesis" className="w-20 h-20 rounded-full object-cover" />
                   <div>
                     <h4 className="font-semibold text-lg">Mimi & Carlos</h4>
                     <p className="text-gray-500 mb-4">Guadalajara</p>

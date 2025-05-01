@@ -3,43 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import ProductCard, { Product } from './ProductCard';
+import {allProducts} from '@/pages/Products'; // Importa todos los productos desde el archivo de datos
 
-const featuredProducts: Product[] = [
-  {
-    id: '1',
-    name: 'Prótesis para Pata Trasera - Perro',
-    description: 'Prótesis ajustable para perros medianos y grandes que proporciona soporte y movilidad para la pata trasera.',
-    price: 299.99,
-    image: '/placeholder.svg',
-    category: 'dogs',
-    isOnSale: true,
-    salePrice: 249.99
-  },
-  {
-    id: '2',
-    name: 'Prótesis Ligera para Gatos',
-    description: 'Diseñada específicamente para gatos, esta prótesis es ligera y permite movimientos naturales.',
-    price: 199.99,
-    image: '/placeholder.svg',
-    category: 'cats'
-  },
-  {
-    id: '3',
-    name: 'Silla de Ruedas Ajustable - Perro Pequeño',
-    description: 'Silla de ruedas para perros pequeños con problemas de movilidad en las patas traseras.',
-    price: 159.99,
-    image: '/placeholder.svg',
-    category: 'dogs'
-  },
-  {
-    id: '4',
-    name: 'Arnés de Soporte para Movilidad',
-    description: 'Arnés ajustable que proporciona soporte adicional para mascotas con dificultades de movilidad.',
-    price: 59.99,
-    image: '/placeholder.svg',
-    category: 'accessories'
-  }
-];
+const featuredProducts: Product[] = allProducts.slice(0, 4);
 
 const FeaturedProducts = () => {
   return (
