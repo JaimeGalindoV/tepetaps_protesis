@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Dog, Instagram, Facebook, Twitter } from 'lucide-react';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
+import { Logo } from './ui/logo';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Dog className="h-8 w-8" />
+              <Logo className="h-8 w-8"/>
               <span className="text-2xl font-bold">Tepetaps</span>
             </div>
             <p className="text-petPurple-100 mb-6">
@@ -64,8 +64,8 @@ const Footer = () => {
             <address className="not-italic text-petPurple-100">
               <p>Avenida Mascota Feliz 123</p>
               <p>Ciudad Animalitos, CP 12345</p>
-              <p className="mt-2">Email: info@pawsitiveprosthetics.com</p>
-              <p>Teléfono: (123) 456-7890</p>
+              <p className="mt-2">Email: tepetaps.pet@gmail.com</p>
+              <p>Teléfono: (33) 2157-7429</p>
             </address>
           </div>
         </div>

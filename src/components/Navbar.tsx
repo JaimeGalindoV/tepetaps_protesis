@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Heart, Menu, X, ShoppingCart, Dog } from 'lucide-react';
+import { Heart, Menu, X, ShoppingCart} from 'lucide-react';
+import { Logo } from './ui/logo';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +17,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
-            {/* <Dog className="h-8 w-8 text-petPurple-600" /> */}
-            <img src="/Logo.png" alt="Logo" className="h-8 w-8" />
+            <Logo className="h-8 w-8" />
             <span className="text-2xl font-bold text-petPurple-600">Tepetaps</span>
           </Link>
 
