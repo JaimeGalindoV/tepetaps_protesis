@@ -266,7 +266,7 @@ const About = () => {
                 </Button>
               </Link>
               <Link to="/donations">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-petPurple-500">
+                <Button size="lg" variant="outline" className="border-white text-petPurple-600 hover:bg-petPurple-500">
                   Hacer una Donación
                 </Button>
               </Link>
