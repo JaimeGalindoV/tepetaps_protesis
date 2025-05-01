@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Dog, Heart, Instagram, Facebook, Twitter } from 'lucide-react';
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
@@ -16,14 +18,11 @@ const Footer = () => {
               Ayudamos a nuestros amigos de cuatro patas a recuperar su movilidad y calidad de vida.
             </p>
             <div className="flex gap-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-petPurple-300">
-                <Instagram />
+              <a href="https://www.instagram.com/tepetaps.pet/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-petPurple-300">
+                <FaInstagram size={25}/>
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-petPurple-300">
-                <Facebook />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-petPurple-300">
-                <Twitter />
+              <a href="https://www.tiktok.com/@tepetaps7?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="text-white hover:text-petPurple-300">
+                <FaTiktok size={25}/>
               </a>
             </div>
           </div>
