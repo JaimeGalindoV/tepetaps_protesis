@@ -13,10 +13,10 @@ const donationCampaigns: Donation[] = [
   {
     id: '1',
     title: 'Prótesis para Max',
-    description: 'Ayuda a Max, un labrador de 5 años, a conseguir una prótesis para su pata trasera.',
+    description: 'Ayuda a Max, un pit bull de 5 años, a conseguir una prótesis para su pata delantera.',
     targetAmount: 3000,
     currentAmount: 1800,
-    image: '/placeholder.svg'
+    image: '/donaciones/Prótesis para Max.jpg'
   },
   {
     id: '2',
@@ -24,7 +24,7 @@ const donationCampaigns: Donation[] = [
     description: 'Luna necesita terapia de rehabilitación después de recibir su nueva prótesis.',
     targetAmount: 1500,
     currentAmount: 750,
-    image: '/placeholder.svg'
+    image: '/donaciones/Rehabilitación para Luna.jpg'
   },
   {
     id: '3',
@@ -32,7 +32,7 @@ const donationCampaigns: Donation[] = [
     description: 'Simba es un gato de 3 años que perdió su pata en un accidente. Ayúdale a recuperar su movilidad.',
     targetAmount: 1200,
     currentAmount: 980,
-    image: '/placeholder.svg'
+    image: '/donaciones/Prótesis para Simba.jpg'
   },
   {
     id: '4',
@@ -40,7 +40,7 @@ const donationCampaigns: Donation[] = [
     description: 'Rocky necesita una operación urgente y una prótesis especial. Tu ayuda puede cambiar su vida.',
     targetAmount: 4500,
     currentAmount: 1200,
-    image: '/placeholder.svg'
+    image: '/donaciones/Operación y Prótesis para Rocky.jpg'
   },
   {
     id: '5',
@@ -48,7 +48,7 @@ const donationCampaigns: Donation[] = [
     description: 'Ayuda a proporcionar prótesis a perros y gatos de refugios que lo necesitan.',
     targetAmount: 10000,
     currentAmount: 3500,
-    image: '/placeholder.svg'
+    image: '/donaciones/Proyecto Mascotas Refugio.jpg'
   },
   {
     id: '6',
@@ -56,7 +56,7 @@ const donationCampaigns: Donation[] = [
     description: 'Apoya nuestra investigación para desarrollar prótesis más accesibles y avanzadas.',
     targetAmount: 15000,
     currentAmount: 5800,
-    image: '/placeholder.svg'
+    image: '/donaciones/Fondo para Investigación.jpg'
   }
 ];
 
@@ -266,7 +266,7 @@ const Donations = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <div className="mb-6">
-                <img src="/placeholder.svg" alt="Donante" className="w-20 h-20 rounded-full mx-auto" />
+                <img src="https://randomuser.me/api/portraits/women/0.jpg" alt="Donante" className="w-20 h-20 rounded-full mx-auto" />
               </div>
               <blockquote className="text-xl italic mb-6">
                 "Donar para ayudar a crear una prótesis para Milo ha sido una de las experiencias más gratificantes. Ver cómo ha recuperado su alegría y movilidad no tiene precio. Gracias por permitirme ser parte de esta historia."
@@ -330,3 +330,4 @@ const Donations = () => {
 };
 
 export default Donations;
+export {donationCampaigns};

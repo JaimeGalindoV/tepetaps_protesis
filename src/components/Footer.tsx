@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Dog, Heart, Instagram, Facebook, Twitter } from 'lucide-react';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
 import { Logo } from './ui/logo';
 

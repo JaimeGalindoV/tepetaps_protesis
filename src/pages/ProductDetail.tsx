@@ -7,29 +7,10 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Heart, MessagesSquare, Minus, Plus, Check, Info, Truck } from 'lucide-react';
 import { Product } from '@/components/ProductCard';
+import {allProducts} from '@/pages/Products'; 
 
 // Sample products data
-const productsData: Product[] = [
-  {
-    id: '1',
-    name: 'Prótesis para Pata Trasera - Perro',
-    description: 'Prótesis ajustable para perros medianos y grandes que proporciona soporte y movilidad para la pata trasera. Fabricada con materiales de alta calidad, resistentes y ligeros, que garantizan comodidad y durabilidad. Incluye sistema de ajuste personalizado para adaptarse perfectamente a la anatomía de tu mascota.',
-    price: 299.99,
-    image: '/placeholder.svg',
-    category: 'dogs',
-    isOnSale: true,
-    salePrice: 249.99
-  },
-  {
-    id: '2',
-    name: 'Prótesis Ligera para Gatos',
-    description: 'Diseñada específicamente para gatos, esta prótesis es ligera y permite movimientos naturales. Su diseño ergonómico se adapta perfectamente a la anatomía felina, proporcionando comodidad y estabilidad. El material hipoalergénico evita irritaciones en la piel sensible de tu gato.',
-    price: 199.99,
-    image: '/placeholder.svg',
-    category: 'cats'
-  },
-  // Add more products as needed
-];
+const productsData: Product[] = allProducts
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -37,7 +18,7 @@ const ProductDetail = () => {
   
   // Función para formatear precios en español
   const formatPrice = (price: number): string => {
-    return price.toFixed(2).replace('.', ',') + ' €';
+    return price.toFixed(2) + ' $';
   };
   
   // Find the product based on the id
@@ -124,7 +105,6 @@ const ProductDetail = () => {
                   ))}
                 </div>
               </div>
-              
               {/* Product Info */}
               <div className="lg:w-1/2">
                 <div className="mb-2">
