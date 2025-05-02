@@ -143,7 +143,7 @@ const About = () => {
                 <h3 className="font-semibold text-lg">Jaime Galindo</h3>
                 <p className="text-petPurple-600 mb-2">Ing. en Sistemas computacionales</p>
                 <p className="text-gray-600 text-sm">
-                  Se aventó está pagina el crack, es el que sabe de todo y hace de todo.
+                  Se aventó está pagina el crack.
                 </p>
               </div>
             </div>
