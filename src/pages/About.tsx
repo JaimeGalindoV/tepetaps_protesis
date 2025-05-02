@@ -93,7 +93,7 @@ const About = () => {
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="font-semibold text-lg">Regina Placencia</h3>
-                <p className="text-petPurple-600 mb-2">Fundador & Veterinario</p>
+                <p className="text-petPurple-600 mb-2">Ing. En Sitemas Computacionales</p>
                 <p className="text-gray-600 text-sm">
                   Especialista en rehabilitación animal con más de 15 años de experiencia.
                 </p>
@@ -105,7 +105,7 @@ const About = () => {
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="font-semibold text-lg">Diego Castorena</h3>
-                <p className="text-petPurple-600 mb-2">Ingeniera Biomédica</p>
+                <p className="text-petPurple-600 mb-2">Lic. En Contaduria y Gobierno Corporativo</p>
                 <p className="text-gray-600 text-sm">
                   Responsable del diseño y desarrollo de nuestras prótesis personalizadas.
                 </p>
@@ -117,7 +117,7 @@ const About = () => {
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="font-semibold text-lg">Pablo Gutierrez</h3>
-                <p className="text-petPurple-600 mb-2">Fisioterapeuta Animal</p>
+                <p className="text-petPurple-600 mb-2">Ing. Quimico</p>
                 <p className="text-gray-600 text-sm">
                   Experto en rehabilitación y adaptación a las prótesis.
                 </p>
@@ -129,7 +129,8 @@ const About = () => {
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="font-semibold text-lg">Valeria Camacho</h3>
-                <p className="text-petPurple-600 mb-2">Coordinadora de Donaciones</p>
+                <p className="text-petPurple-600 mb-2">INGENIERIA EN BIOTECNOLOGIA</p>
+                <p className="text-petPurple-600 mb-2">Ing. En Biotecnologia</p>
                 <p className="text-gray-600 text-sm">
                   Gestiona nuestro programa de donaciones y colaboraciones con refugios.
                 </p>
