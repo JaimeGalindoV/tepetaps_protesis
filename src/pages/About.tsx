@@ -27,22 +27,18 @@ const About = () => {
               <div className="md:w-1/2">
                 <h2 className="text-3xl font-bold mb-6">Nuestra Historia</h2>
                 <p className="mb-4 text-gray-700">
-                  Pawsitive Prosthetics nació de una experiencia personal. Nuestro fundador, Miguel Rodríguez, 
-                  veterinario de profesión, vio cómo su perro Toby perdía una pata tras un accidente.
+                  Tepetaps nació de la idea de nuestro equipo por hacer un mundo mejor para las mascotas.
                 </p>
                 <p className="mb-4 text-gray-700">
-                  Al buscar opciones para mejorar la movilidad de Toby, Miguel descubrió que las prótesis para mascotas 
-                  eran escasas y costosas. Decidido a cambiar esta realidad, comenzó a diseñar y fabricar una prótesis 
-                  para su compañero.
-                </p>
-                <p className="text-gray-700">
-                  El éxito de su proyecto y la increíble recuperación de Toby lo inspiraron a fundar Pawsitive Prosthetics en 2018. 
-                  Desde entonces, hemos ayudado a cientos de mascotas a recuperar su movilidad y calidad de vida.
+                  Al buscar opciones para ayudar a mascotas, nos dimos cuenta de que el acceso a una
+                  protesis adecuada para mascotas con problemas de movilidad era limitado y costoso. 
+                  Decididos a cambiar esta realidad, comenzamos a investigar y contactar profesionales del área
+                  para crear una solución accesible y efectiva.
                 </p>
               </div>
               <div className="md:w-1/2">
                 <img 
-                  src="/placeholder.svg" 
+                  src="/perros/taco.jpg" 
                   alt="Fundador con su perro" 
                   className="rounded-xl shadow-lg w-full h-auto"
                 />
@@ -89,14 +85,14 @@ const About = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold mb-12 text-center">Nuestro Equipo</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
               <div className="text-center">
                 <img 
-                  src="/placeholder.svg" 
-                  alt="Miguel Rodríguez" 
+                  src="/personas/regina.jpg"
+                  alt="Regina Placencia" 
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="font-semibold text-lg">Miguel Rodríguez</h3>
+                <h3 className="font-semibold text-lg">Regina Placencia</h3>
                 <p className="text-petPurple-600 mb-2">Fundador & Veterinario</p>
                 <p className="text-gray-600 text-sm">
                   Especialista en rehabilitación animal con más de 15 años de experiencia.
@@ -104,11 +100,11 @@ const About = () => {
               </div>
               <div className="text-center">
                 <img 
-                  src="/placeholder.svg" 
-                  alt="Ana Martínez" 
+                  src="/personas/diego.jpg" 
+                  alt="Diego Castorena" 
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="font-semibold text-lg">Ana Martínez</h3>
+                <h3 className="font-semibold text-lg">Diego Castorena</h3>
                 <p className="text-petPurple-600 mb-2">Ingeniera Biomédica</p>
                 <p className="text-gray-600 text-sm">
                   Responsable del diseño y desarrollo de nuestras prótesis personalizadas.
@@ -116,11 +112,11 @@ const About = () => {
               </div>
               <div className="text-center">
                 <img 
-                  src="/placeholder.svg" 
-                  alt="Carlos Mendoza" 
+                  src="/personas/pablo.png   " 
+                  alt="Pablo Gutierrez" 
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="font-semibold text-lg">Carlos Mendoza</h3>
+                <h3 className="font-semibold text-lg">Pablo Gutierrez</h3>
                 <p className="text-petPurple-600 mb-2">Fisioterapeuta Animal</p>
                 <p className="text-gray-600 text-sm">
                   Experto en rehabilitación y adaptación a las prótesis.
@@ -128,14 +124,26 @@ const About = () => {
               </div>
               <div className="text-center">
                 <img 
-                  src="/placeholder.svg" 
-                  alt="Laura González" 
+                  src="/personas/vale.jpg" 
+                  alt="Valeria Camacho" 
                   className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="font-semibold text-lg">Laura González</h3>
+                <h3 className="font-semibold text-lg">Valeria Camacho</h3>
                 <p className="text-petPurple-600 mb-2">Coordinadora de Donaciones</p>
                 <p className="text-gray-600 text-sm">
                   Gestiona nuestro programa de donaciones y colaboraciones con refugios.
+                </p>
+              </div>
+              <div className="text-center">
+                <img 
+                  src="/personas/jaime.jpg" 
+                  alt="Jaime Galindo" 
+                  className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h3 className="font-semibold text-lg">Jaime Galindo</h3>
+                <p className="text-petPurple-600 mb-2">Ing. en Sistemas computacionales</p>
+                <p className="text-gray-600 text-sm">
+                  Se aventó está pagina el crack, es el que sabe de todo y hace de todo.
                 </p>
               </div>
             </div>
