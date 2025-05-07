@@ -16,17 +16,17 @@ const allProducts: Product[] = [
     id: '1',
     name: 'Prótesis para Pata Trasera - Perro',
     description: 'Prótesis ajustable para perros medianos y grandes que proporciona soporte y movilidad para la pata trasera.',
-    price: 299.99,
+    price: 5000,
     image: '/perros/Prótesis para Pata Trasera - Perro.jpg',
     category: 'dogs',
     isOnSale: true,
-    salePrice: 249.99
+    salePrice: 4500
   },
   {
     id: '2',
     name: 'Prótesis Ligera para Gatos',
     description: 'Diseñada específicamente para gatos, esta prótesis es ligera y permite movimientos naturales.',
-    price: 199.99,
+    price: 1500,
     image: '/gatos/Prótesis Ligera para Gatos.jpg',
     category: 'cats'
   },
@@ -34,7 +34,7 @@ const allProducts: Product[] = [
     id: '3',
     name: 'Silla de Ruedas Ajustable - Perro Pequeño',
     description: 'Silla de ruedas para perros pequeños con problemas de movilidad en las patas traseras.',
-    price: 159.99,
+    price: 500,
     image: '/perros/Silla de Ruedas Ajustable - Perro Pequeño.jpg',
     category: 'dogs'
   },
@@ -42,7 +42,7 @@ const allProducts: Product[] = [
     id: '4',
     name: 'Arnés de Soporte para Movilidad',
     description: 'Arnés ajustable que proporciona soporte adicional para mascotas con dificultades de movilidad.',
-    price: 59.99,
+    price: 4500,
     image: '/perros/Arnés de Soporte para Movilidad.jpg',
     category: 'accessories'
   },
@@ -50,7 +50,7 @@ const allProducts: Product[] = [
     id: '5',
     name: 'Prótesis Completa para Pata Delantera - Perro',
     description: 'Prótesis completa para pata delantera, ideal para perros de todas las razas y tamaños.',
-    price: 349.99,
+    price: 5000,
     image: '/perros/Prótesis Completa para Pata Delantera - Perro.jpg',
     category: 'dogs'
   },
@@ -58,17 +58,17 @@ const allProducts: Product[] = [
     id: '6',
     name: 'Prótesis para Pata Delantera - Gato',
     description: 'Prótesis especializada para gatos, ultraligera y resistente, perfecta para la pata delantera.',
-    price: 229.99,
+    price: 3800,
     image: '/gatos/Prótesis para Pata Delantera - Gato.jpeg',
     category: 'cats',
     isOnSale: true,
-    salePrice: 199.99
+    salePrice: 3300
   },
   {
     id: '7',
     name: 'Silla de Ruedas para Gatos',
     description: 'Silla de ruedas especialmente diseñada para la anatomía felina, ligera y confortable.',
-    price: 189.99,
+    price: 2500,
     image: '/gatos/Silla de Ruedas para Gatos.jpg',
     category: 'cats'
   },
@@ -76,7 +76,7 @@ const allProducts: Product[] = [
     id: '8',
     name: 'Calcetines Protectores para Prótesis',
     description: 'Calcetines especiales para proteger el punto de contacto entre la prótesis y la piel del animal.',
-    price: 29.99,
+    price: 150,
     image: '/perros/Calcetines Protectores para Prótesis.jpeg',
     category: 'accessories'
   }
@@ -90,7 +90,7 @@ const Products = () => {
   const [products, setProducts] = useState<Product[]>(allProducts);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(allProducts);
   const [searchTerm, setSearchTerm] = useState('');
-  const [priceRange, setPriceRange] = useState([0, 500]);
+  const [priceRange, setPriceRange] = useState([0, 6000]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>(
     categoryParam ? [categoryParam] : []
   );
